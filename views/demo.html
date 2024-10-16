@@ -1,0 +1,25 @@
+<!-- testing of form format -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Input Form</title>
+</head>
+<body>
+
+<h2>Email Input Form</h2>
+
+<form action="/submit-your-form-handler" method="post">
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required 
+         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+         title="Please enter a valid email address"
+         placeholder="Enter your email address"><br>
+  <small>Please enter a valid email address.</small><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reservation Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/book.css">
+    </head>
+    <body>
+        
+        <section class = "banner">
+            <h2>BOOK YOUR TABLE NOW</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                    
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form action="/book" method="post">
+                        <div class = "form-row">
+                            <!-- <select name = "days">
+                                <option value = "day-select">Select Day</option>
+                                <option value = "sunday">Sunday</option>
+                                <option value = "monday">Monday</option>
+                                <option value = "tuesday">Tuesday</option>
+                                <option value = "wednesday">Wednesday</option>
+                                <option value = "thursday">Thursday</option>
+                                <option value = "friday">Friday</option>
+                                <option value = "saturday">Saturday</option>
+                            </select> -->
+
+                            <!-- <select name = "hours">
+                                <option value = "hour-select">Select Hour</option>
+                                <option value = "10">10: 00</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">16: 00</option>
+                                <option value = "10">18: 00</option>
+                                <option value = "10">20: 00</option>
+                                <option value = "10">22: 00</option>
+                            </select> -->
+                            <select name = "members">
+                                <option value = "one">Member:1</option>
+                                <option value = "two">Members:2</option>
+                                <option value = "three">Members:3</option>
+                                <option value = "four">Members:4</option>
+                                <option value = "five">Members:5</option>
+                                <option value = "six">Members:6</option>                              
+                            </select>
+
+                            <h4>
+                                <input type="datetime-local" name="date" id="Test_DatetimeLocal">
+                            </h4>
+
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Full Name" name="username">
+                            <input type = "number" placeholder="Phone Number" name="phoneNo">
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "number" name="tableNo" placeholder="Preferred TableNo." min = "1">
+                            <input type = "submit" value = "BOOK TABLE">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
